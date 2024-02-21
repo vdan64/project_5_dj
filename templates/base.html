@@ -10,9 +10,13 @@
 </head>
 <body>
     <header>
-        <h1><a href="{% url {'home'} %}">Django blog  victo</a></h1>
+        <h1><a href="{% url 'home' %}">Django blog  victo</a></h1>
     </header>
       <SECtion>
+        <div>
+          <a href="{% url 'post_new' %}">New post</a>
+        </div>
+        <br>
         {% block content %}
         {% endblock content %}
       </SECtion>
